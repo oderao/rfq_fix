@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include rfq_fix *.css
+recursive-include rfq_fix *.csv
+recursive-include rfq_fix *.html
+recursive-include rfq_fix *.ico
+recursive-include rfq_fix *.js
+recursive-include rfq_fix *.json
+recursive-include rfq_fix *.md
+recursive-include rfq_fix *.png
+recursive-include rfq_fix *.py
+recursive-include rfq_fix *.svg
+recursive-include rfq_fix *.txt
+recursive-exclude rfq_fix *.pyc
