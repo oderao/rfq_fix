@@ -64,7 +64,7 @@ app_license = "MIT"
 # ------------
 
 # before_install = "rfq_fix.install.before_install"
-# after_install = "rfq_fix.install.after_install"
+after_install = "rfq_fix.install.replace_rfq_js"
 
 # Uninstallation
 # ------------
