@@ -9,9 +9,11 @@ def replace_rfq_js():
         ex parsefloat("1,000.00") returns 1 instead of 1000
     """
     try:
+        
         destination_path  = frappe.utils.get_bench_path() + "/apps/erpnext/erpnext/templates/includes/rfq.js"
         source = frappe.utils.get_bench_path() + "/apps/rfq_fix/rfq_fix/rfq.js"
-        os.replace(source, destination_path)
+        if os.path.exists(source):
+            os.replace(source, destination_path)
     except Exception as e:
         print(e)
         
