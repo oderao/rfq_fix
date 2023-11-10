@@ -66,8 +66,6 @@ rfq = class rfq {
 		$.each(doc.items, function(idx, data){
 			if(data.idx == me.idx){
 				data.qty = me.qty;
-				console.log("rate",me.rate)
-				console.log("qty",me.qty)
 				data.rate = me.rate;
 				data.amount = (me.rate * me.qty) || 0.0;
 				$(repl('.rfq-amount[data-idx=%(idx)s]',{'idx': me.idx})).text(format_number(data.amount, doc.number_format, 2));
